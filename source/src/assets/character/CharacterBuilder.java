@@ -1,7 +1,7 @@
-package assets.Character;
+package assets.character;
 
-import Behavior.AttackBehavior;
-import Behavior.BehaviorStrategy;
+import behavior.AttackBehavior;
+import behavior.BehaviorStrategy;
 
 public class CharacterBuilder implements Builder {
     // обязательные поля (значений по умолчанию нет)

@@ -1,6 +1,6 @@
-package assets.Character;
+package assets.character;
 
-import Behavior.BehaviorStrategy;
+import behavior.BehaviorStrategy;
 
 public interface Builder {
     Builder setName(String name);

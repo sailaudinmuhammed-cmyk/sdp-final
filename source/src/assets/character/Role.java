@@ -1,4 +1,4 @@
-package assets.Character;
+package assets.character;
 
 public enum Role {
     PLAYER,

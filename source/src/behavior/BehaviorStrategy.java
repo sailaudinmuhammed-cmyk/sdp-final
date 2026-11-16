@@ -1,6 +1,6 @@
-package Behavior;
+package behavior;
 
-import assets.Character.GameCharacter;
+import assets.character.GameCharacter;
 
 public interface BehaviorStrategy {
     void execute(GameCharacter character);
