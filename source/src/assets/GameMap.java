@@ -1,7 +1,6 @@
 package assets;
 
 public abstract class GameMap extends Asset{
-    private final String name = "Map";
     private final String attribute;
     private final int damageMod;
     private final int hideMod;
@@ -28,5 +27,10 @@ public abstract class GameMap extends Asset{
 
     public String getDescription(){
         return  "The " + this.getName() + " sure is " + attribute;
+    }
+
+    @Override
+    public String toString(){
+        return "| NAME: " + getName() + "| " + getDescription() + "|";
     }
 }

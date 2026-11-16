@@ -22,4 +22,9 @@ public class GameCharacter extends Asset {
     public void setBehaviorStrategy(BehaviorStrategy behaviorStrategy) {
         this.behaviorStrategy = behaviorStrategy;
     }
+
+    @Override
+    public String toString(){
+        return "| NAME: " + getName() + "| HP: " + hp + "| DAMAGE: "+ damage + " | HIDING PROBABILITY " + hideProb + "|";
+    }
 }

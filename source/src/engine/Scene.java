@@ -19,7 +19,7 @@ public class Scene {
     }
 
     public List<GameCharacter> getCharacterList() {
-        ArrayList<GameCharacter> copy = new ArrayList<>(characters);
+        List<GameCharacter> copy = new ArrayList<>(characters);
         return copy;
     }
 
