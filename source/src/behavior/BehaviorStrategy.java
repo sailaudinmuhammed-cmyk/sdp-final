@@ -1,7 +1,8 @@
 package behavior;
 
+import assets.GameMap;
 import assets.character.GameCharacter;
 
 public interface BehaviorStrategy {
-    void execute(GameCharacter character);
+    String execute(GameCharacter actor, GameCharacter target, GameMap map);
 }
