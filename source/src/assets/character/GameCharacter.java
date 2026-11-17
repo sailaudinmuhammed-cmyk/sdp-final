@@ -75,6 +75,10 @@ public class GameCharacter extends Asset {
         return behaviorStrategy.execute(this, target, map);
     }
 
+    public String getStrategyName() {
+        return behaviorStrategy.getClass().getSimpleName();
+    }
+
     @Override
     public String toString() {
         return "| NAME: " + getName()
