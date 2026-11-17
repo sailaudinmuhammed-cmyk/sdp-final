@@ -10,4 +10,8 @@ public abstract class Renderer {
     }
 
     public abstract void render(Scene scene);
+
+    public void showMessage(String message) {
+        api.drawText(message);
+    }
 }
