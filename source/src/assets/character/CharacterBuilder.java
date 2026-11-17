@@ -58,12 +58,24 @@ public class CharacterBuilder implements Builder {
         if (name == null || name.isBlank()) {
             throw new IllegalStateException("Character name is required");
         }
+
+        if (damage < 0) {
+            throw new IllegalStateException("Damage cannot be negative");
+        }
+
+
         if (hp <= 0) {
             throw new IllegalStateException("HP must be positive");
         }
+
         if (role == null) {
             throw new IllegalStateException("Role is required");
         }
+
+        if (behaviorStrategy == null) {
+            throw new IllegalStateException("Behavior strategy is required");
+        }
+
         return new GameCharacter(name, hp, damage, hideProb, role, behaviorStrategy);
     }
 }
